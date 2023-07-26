@@ -28,7 +28,7 @@ const App = () => {
       </div>
 
 
-      <div className={`bg-white , ${styles.flexStart}`}>
+      <div className={`${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <CTA />
           <Footer />

@@ -20,8 +20,8 @@ const WhoAreWe = () => {
   return (
     <section id="who are we" className={`${layout.section} px-4 md:px-0`}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Borem ipsum dolor sit
-          <br className='sm:block hidden' /> Nunc vulputate libero </h2>
+        <h2 className={styles.heading2}>Who are we and
+          <br className='sm:block hidden' /> what do we do</h2>
         <p className={`${styles.paragraph} mt-5 max-w-[470px]`}>Welcome to Cyburst Internet Solutions, where we are dedicated to providing
           fast and reliable internet services to meet your connectivity needs. With a focus on customer
           satisfaction and cutting-edge technology, we strive to deliver seamless internet experiences that keep

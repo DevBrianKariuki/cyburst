@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style'
-import { Hero, Navbar, Stats, Billing, Testimonials, WhyChooseUs, CTA, Footer, WhoAreWe } from './components';
+import { Hero, Navbar, Stats, Billing, Pricing, Blogs, Testimonials, WhyChooseUs, CTA, Footer, WhoAreWe } from './components';
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
       <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <WhyChooseUs />
-          <Billing />
+          <Pricing />
           <WhoAreWe />
           <Testimonials />
         </div>
@@ -31,6 +31,18 @@ const App = () => {
       <div className={`${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <CTA />
+        </div>
+      </div>
+
+      <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Blogs />
+        </div>
+      </div>
+
+
+      <div className={`${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
       </div>

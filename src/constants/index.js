@@ -51,7 +51,9 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      `Cyburst has completely changed the way I approach internet service providers. 
+      The website's user experience is top-notch, making the search for the perfect internet plan enjoyable rather than frustrating. 
+      I'm a happy and loyal Cyburst customer!`,
     name: "John Wahome",
     title: "Software Developer",
     img: people01,
@@ -59,7 +61,9 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      `Cyburst has completely changed the way I approach internet service providers. 
+    The website's user experience is top-notch, making the search for the perfect internet plan enjoyable rather than frustrating. 
+    I'm a happy and loyal Cyburst customer!`,
     name: "Robert Muhoho",
     title: "Forex Trader",
     img: people02,
@@ -67,7 +71,9 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      `Cyburst has completely changed the way I approach internet service providers. 
+    The website's user experience is top-notch, making the search for the perfect internet plan enjoyable rather than frustrating. 
+    I'm a happy and loyal Cyburst customer!`,
     name: "Sammy Kioko",
     title: "Lawyer & Businessman",
     img: people03,

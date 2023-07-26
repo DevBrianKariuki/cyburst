@@ -18,7 +18,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const WhyChooseUs = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={`${styles.heading2} px-4 md:px-0`}>Why should you choose<br className='sm:block hidden' /> to opt for our services</h2>
+      <h2 className={`${styles.heading2} text-center md:text-left px-4 md:px-0`}>Why should you choose<br className='sm:block hidden' /> to opt for our services</h2>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index} />

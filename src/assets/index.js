@@ -24,9 +24,19 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import hero_image from "./hero_image.svg";
+import why_choose_us from "./why_choose_us.png";
+import speed from "./speed.svg";
+import unlimited from "./unlimited.svg";
+import customer_service from "./customer_service.svg";
+import who_are_we from "./who_are_we.png";
 
 export {
   airbnb,
+  who_are_we,
+  speed,
+  unlimited,
+  customer_service,
+  why_choose_us,
   hero_image,
   bill,
   binance,

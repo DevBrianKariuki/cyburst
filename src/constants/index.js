@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, speed, customer_service, unlimited } from "../assets";
 
 export const navLinks = [
   {
@@ -26,24 +26,24 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Rewards",
+    icon: speed,
+    title: "Lightning Fast Speed",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Experience seamless internet with our highly reliable fast-connections",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
+    icon: customer_service,
+    title: "24/7 Customer Support",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Get assistance anytime you need it from our dedicated customer support team",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    icon: unlimited,
+    title: "Unlimited Data",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "No more worrying about data limits,enjoy seamless unlimited internet usage",
   },
 ];
 
@@ -52,24 +52,24 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+    name: "John Wahome",
+    title: "Software Developer",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+    name: "Robert Muhoho",
+    title: "Forex Trader",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
       "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    name: "Sammy Kioko",
+    title: "Lawyer & Businessman",
     img: people03,
   },
 ];
@@ -176,21 +176,21 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
-];
+// export const clients = [
+//   {
+//     id: "client-1",
+//     logo: airbnb,
+//   },
+//   {
+//     id: "client-2",
+//     logo: binance,
+//   },
+//   {
+//     id: "client-3",
+//     logo: coinbase,
+//   },
+//   {
+//     id: "client-4",
+//     logo: dropbox,
+//   },
+// ];

@@ -2,7 +2,6 @@ import React from 'react'
 import { feedback } from '../constants'
 import styles from '../style'
 import FeedbackCard from './FeedbackCard'
-import { circles } from '../assets/'
 
 const Testimonials = () =>  (
   <section id='clients' className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>

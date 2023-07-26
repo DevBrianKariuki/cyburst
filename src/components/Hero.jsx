@@ -1,46 +1,33 @@
 import styles from '../style';
-import { discount, robot } from '../assets';
-import GetStarted from './GetStarted';
+import { hero_image } from '../assets';
+import { Button } from 'flowbite-react';
+
 
 const Hero = () => 
   (
-  <section id="home" className={`flex md:flex-row flex-col padding ${styles.paddingY}`}>
+  <section id="home" className={`flex md:flex-row items-center flex-col padding ${styles.paddingY}`}>
 
-    <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-      <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-        <img src={discount} alt='discount' className="w-[32px] h-[32px]" />
-        <p className={`${styles.paragraph}`}>
-          <span className="text-white"> 20%</span> DISCOUNT FOR {" "}
-          <span className="text-white">1 MONTH </span> ACCOUNT
-        </p>
-      </div>
+    <div className={`flex-1 flex items-center md:items-start flex-col xl:px-0 sm:px-16 px-6`}>
 
-      <div className='flex flex-row justify-between items-center w-full'>
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading=[100px] leading-[75px] text-white">
-          The Next <br className='sm:block hidden'/> {" "}
-          <span className="text-gradient">Generation</span>{" "}
-          
+      <div className='flex flex-row justify-center items-center w-full'>
+        <h1 className="flex-1 font-poppins text-center md:text-left font-bold ss:text-[72px] text-[52px] ss:leading=[100px] leading-[75px]">
+          <span className="text-zinc-800 text-6xl font-semibold tracking-tight">Elevate Your </span>
+          <br className='sm:block hidden' />
+          <span className="text-primary text-6xl font-semibold tracking-tight">Online Presence</span>
+          <span className="text-zinc-800 text-6xl font-semibold tracking-tight"> with </span>
+          <span className="text-primary text-6xl font-semibold tracking-tight">Cyburst!</span>
         </h1>
-        <div className='ss:flex hidden md:mr-4 mr-0'>
-          <GetStarted />
-        </div>
       </div>
 
-      <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px]'>
-        Payment Method.
-      </h1>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Our team of experts uses a methodology to identify the credit cards most likely to fit your needs
-        We examine annual percentage rates and annual fees.
+      <p className={`${styles.paragraph} max-w-[470px] mt-6 text-center md:text-left `}>We believe in delivering exceptional value and ensuring that you
+        have the right internet solution for your needs.
       </p>
+      <Button className="bg-primary font-poppins uppercase mt-8 text-center justify-center items-center h-18">
+        Get a free quote
+      </Button>
     </div>
-    <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-      <img src={robot} alt='billing' className='w-[100%] h-[100%] relative z-[5]' />
-      <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
-      <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient' />
-      <div className='absolute z-[0] w-[50%] h-[60%] right-20 bottom-20 blue__gradient' />
-    </div>
-    <div className={`ss:hidden ${styles.flexCenter} `}>
-      <GetStarted />
+    <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-14 relative`}>
+      <img src={hero_image} alt='hero-image' className='w-[100%] h-[100%] md:w-[90%] md:h-[90%] relative z-[5]' />
     </div>
   </section>
   )

@@ -7,13 +7,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className='w-full flex justify-between items-center py-6 navbar'>
-      <img src={logo} alt="logo" className='w-[124px] h-[32px]' />
+      <h3 className='text-primary font-poppins font-bold text-2xl lg:text-4xl pl-4 lg:pl-0'>Cyburst</h3>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-gray-900`}>
             <a href={`#${nav.title}`}>
               {nav.title}
             </a>
@@ -24,14 +24,14 @@ const Navbar = () => {
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img src={toggle ? close : menu}
           alt="menu"
-          className='w-[24px] h-[24px] object-contain'
+          className='w-[24px] h-[24px] object-contain mr-4'
           onClick={() => setToggle((prev) => !prev)}
         />
 
         <div
-          className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          className={`${toggle ? 'flex' : 'hidden'} p-6 bg-primary absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex flex-col justify-end items-center flex-1">
+          <ul className="list-none flex flex-col justify-end items-left flex-1">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

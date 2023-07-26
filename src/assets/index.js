@@ -23,9 +23,11 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import hero_image from "./hero_image.svg";
 
 export {
   airbnb,
+  hero_image,
   bill,
   binance,
   card,

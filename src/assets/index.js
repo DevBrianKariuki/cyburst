@@ -20,17 +20,23 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.png";
+import people02 from "./people02.jpg";
+import people01 from "./people01.jpeg";
+import people03 from "./people03.jpg";
 import hero_image from "./hero_image.svg";
 import why_choose_us from "./why_choose_us.png";
 import speed from "./speed.svg";
 import unlimited from "./unlimited.svg";
 import customer_service from "./customer_service.svg";
 import who_are_we from "./who_are_we.png";
+import router from "./router.png";
+import network_security from "./network_security.jpg";
+import parent from "./parent.png";
 
 export {
+  router,
+  network_security,
+  parent,
   airbnb,
   who_are_we,
   speed,

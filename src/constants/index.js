@@ -61,9 +61,8 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      `Cyburst has completely changed the way I approach internet service providers. 
-    The website's user experience is top-notch, making the search for the perfect internet plan enjoyable rather than frustrating. 
-    I'm a happy and loyal Cyburst customer!`,
+      `I've been a loyal customer of Cyburst for several years now, and they consistently impress me with their top-notch internet supplies.
+      Whether it's high-speed routers, reliable modems, or cutting-edge networking equipment, Cyburst always delivers products of the highest quality. `,
     name: "Robert Muhoho",
     title: "Forex Trader",
     img: people02,
@@ -71,9 +70,8 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      `Cyburst has completely changed the way I approach internet service providers. 
-    The website's user experience is top-notch, making the search for the perfect internet plan enjoyable rather than frustrating. 
-    I'm a happy and loyal Cyburst customer!`,
+      `I can't express how thrilled I am with Cyburst! Their internet supplying service has made my life so much easier.
+      The website is incredibly user-friendly, allowing me to browse and select from a wide range of internet plans within minutes.`,
     name: "Sammy Kioko",
     title: "Lawyer & Businessman",
     img: people03,

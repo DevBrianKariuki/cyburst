@@ -85,7 +85,7 @@ const Pricing = () => (
       <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:items-center">
         <PriceCard title={'HOME PLAN'} speed={5} price={'1,500'} />
         <PriceCard title={'SCHOOL PLAN'} speed={10} price={'2,000'} />
-        <PriceCard title={'BUSINESS PLAN'} speed={20} price={'4,000'} />
+        <PriceCard title={'BUSINESS PLAN'} speed={20} price={'2,500'} />
       </div>
     </div>
     {/* // <!-- End Pricing --> */}

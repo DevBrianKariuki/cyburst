@@ -26,7 +26,7 @@ const WhyChooseUs = () => (
       </div>
     </div>
     <div className={layout.sectionImg}>
-      <img src={why_choose_us} alt="WHy Chose us" className='w-[100%] h-[100%] px-4 md:px-0' />
+      <img src={why_choose_us} alt="WHy Chose us" className='w-[100%] contain h-[100%] md:h-[90%] md:w-[90%] px-4 md:px-0' />
     </div>
   </section>
   )

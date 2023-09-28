@@ -1,53 +1,25 @@
 import React from 'react';
-import styles from './style'
-import { Hero, Navbar, Stats, Billing, Pricing, Blogs, Testimonials, WhyChooseUs, CTA, Footer, WhoAreWe } from './components';
+
+import Home from './Pages/Home';
+import PricingPage from './Pages/Pricing';
+import Blog from './Pages/Blog';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import { Route, Routes } from "react-router-dom";
+// 
 
 const App = () => {
   return (
-    <div className='bg-white w-full overflow-hidden '>
-      <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar />
-        </div>
-      </div>
 
-      <div className={`bg-white ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-          <Stats />
-        </div>
-      </div>
+    <Routes>
+        <Route index path="/" element={< Home />} />
+        <Route path="pricing" element={< PricingPage />} />
+        <Route path="blog" element={< Blog />} />
+        <Route path="about" element={< About />} />
+        <Route path="contact" element={< Contact />} />
+      </Routes>
 
-      <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <WhyChooseUs />
-          <Pricing />
-          <WhoAreWe />
-          <Testimonials />
-        </div>
-      </div>
-
-
-      <div className={`${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <CTA />
-        </div>
-      </div>
-
-      <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Blogs />
-        </div>
-      </div>
-
-
-      <div className={`${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Footer />
-        </div>
-      </div>
-
-    </div>
+    
   )
 }
 

@@ -27,10 +27,12 @@ const WhoAreWe = () => {
           satisfaction and cutting-edge technology, we strive to deliver seamless internet experiences that keep
           you connected, informed, and empowered...
         </p>
-        <Button className="bg-primary font-poppins mt-6 hover:bg-orange-500 focus:bg-orange-500">Learn More</Button>
+        <a href={`/about`} className="font-poppins cursor-pointer font-semibold uppercase mt-8 rounded-md bg-primary text-white p-4">
+          Learn more
+        </a>
       </div>
       <div className={layout.sectionImg}>
-        <img src={who_are_we} alt="Who are we" className='w-[100%] h-[100%] px-4 md:px-0' />
+        <img src={who_are_we} alt="Who are we" className='w-[100%] h-[100%] md:w-[80%]' />
       </div>
     </section>
   )

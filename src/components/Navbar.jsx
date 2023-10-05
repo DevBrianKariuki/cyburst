@@ -18,10 +18,10 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`${pathname ===  nav.path ? 'font-semibold text-primary' : 'text-black' } hover:text-primary font-poppins cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} `}>
-            <a href={`${nav.path}`}>
+            className={` hover:text-primary font-poppins cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} `}>
+            <Link className={`${pathname ===  nav.path ? 'font-semibold text-primary' : 'text-black' }`} to={`${nav.path}`}>
               {nav.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

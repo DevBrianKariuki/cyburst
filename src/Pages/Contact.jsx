@@ -18,13 +18,13 @@ const Pricing = () => {
         <div className={`${styles.boxWidth}`}>
 
           <div className='flex flex-row justify-center items-center w-full px-4 mt-12'>
-          <h1 className={`px-2 md:w-[70%] font-poppins text-center font-bold text-[28px] md:text-[40px] text-gray-900 w-full`}>
+            <h1 className={`px-2 md:w-[70%] font-poppins text-center font-bold text-[28px] md:text-[40px] text-gray-900 w-full`}>
                 We are here to assist you with any 
                 <span className='text-primary'> questions </span>,
                 <span className='text-primary'> enquiries </span>,
                 <span className='text-primary'> or support </span>
                 you may need
-              </h1>
+            </h1>
           </div>
 
 

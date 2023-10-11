@@ -1,6 +1,7 @@
 import styles from '../style';
 import { hero_image } from '../assets';
 import { Button } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 
 const Hero = () => 
@@ -22,11 +23,11 @@ const Hero = () =>
       <p className={`${styles.paragraph} max-w-[470px] mt-6 text-center md:text-left `}>We believe in delivering exceptional value and ensuring that you
         have the right internet solution for your needs.
       </p>
-      <a href={`/contact`}>
+      <Link to={`contact`}>
         <button className="font-poppins hover:text-black font-semibold uppercase mt-8 rounded-md bg-primary text-white p-4">
           Get a free quote
         </button>
-      </a>
+      </Link>
     </div>
     <div id='heroimage' className={`flex-1 flex ${styles.flexCenter} md:my-0 my-14 relative`}>
       <img src={hero_image} alt='hero-image' className='w-[100%] h-[100%] md:w-[90%] md:h-[90%] relative z-[5]' />

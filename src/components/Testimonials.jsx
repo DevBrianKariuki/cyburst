@@ -9,7 +9,7 @@ const Testimonials = () =>  (
       <h1 className={`px-2 ${styles.heading2}`}>See what are people saying <br className='sm:block hidden' /> about us</h1>
     </div>
 
-    <div className='flex flex-wrap sm:justify-start justify-center w-full relative z-[1]'>
+    <div className='flex sm:justify-start justify-center w-full relative z-[1]'>
       {feedback.map((card) => (
         <FeedbackCard key={card.id} {...card} />
       ))}

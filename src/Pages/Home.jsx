@@ -6,11 +6,11 @@ import { Hero, Navbar, Stats, Pricing, Blogs, Testimonials, WhyChooseUs, CTA, Fo
 const Home = () => {
   return (
     <div className='bg-white w-full overflow-hidden '>
-       <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
+       {/* <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
          <div className={`${styles.boxWidth}`}>
            <Navbar />
          </div>
-       </div>
+       </div> */}
 
        <div className={`bg-white ${styles.flexStart}`}>
          <div className={`${styles.boxWidth}`}>

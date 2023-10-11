@@ -3,7 +3,7 @@ import styles from '../style'
 
 
 export const PriceCard = ({ title, speed, price }) => (
-  <div className="flex flex-col border w-full border-gray-200 text-left rounded-xl shadow-sm dark:border-gray-700">
+  <div className="hover:scale-105 flex flex-col border w-full border-gray-200 text-left rounded-xl shadow-sm dark:border-gray-700">
     <div className="bg-primary rounded-t-xl py-3 px-4">
       <h4 className="font-medium text-lg font-poppins text-white my-2 text-left dark:text-gray-200">{title}</h4>
       <span className="mt-7 font-bold text-left font-poppins text-5xl text-gray-800 dark:text-gray-200">{speed} MBPS</span>

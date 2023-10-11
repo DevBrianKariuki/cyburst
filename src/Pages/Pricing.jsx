@@ -8,11 +8,11 @@ import { PriceCard } from '../components/Pricing';
 const PricingPage = () => {
   return (
     <div className='bg-white w-full overflow-hidden '>
-       <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
+       {/* <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
          <div className={`${styles.boxWidth}`}>
            <Navbar />
          </div>
-       </div>
+       </div> */}
 
       <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
          <div className={`${styles.boxWidth}`}>
@@ -50,7 +50,7 @@ const PricingPage = () => {
             <div className="max-w-[90rem] py-4sm:px-6 lg:px-8 lg:py-3 mx-auto">
               {/* <!-- Grid --> */}
               <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:items-center">
-                <PriceCard title={'HOME PLAN'} speed={5} price={'1,500'} />
+                <PriceCard className='hover:scale-105' title={'HOME PLAN'} speed={5} price={'1,500'} />
                 <PriceCard title={'SCHOOL PLAN'} speed={10} price={'2,000'} />
                 <PriceCard title={'BUSINESS PLAN'} speed={20} price={'2,500'} />
               </div>

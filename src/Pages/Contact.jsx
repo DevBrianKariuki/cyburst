@@ -8,11 +8,11 @@ import { blackfacebook, blackinstagram, blacktiktok, blacktwitter} from '../asse
 const Pricing = () => {
   return (
     <div className='bg-white w-full overflow-hidden '>
-       <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
+       {/* <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
          <div className={`${styles.boxWidth}`}>
            <Navbar />
          </div>
-       </div>
+       </div> */}
 
       <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
@@ -31,10 +31,10 @@ const Pricing = () => {
         <section className={`flex md:flex-row flex-col ${styles.paddingY} px-4 md:px-0`}>
             <div className={`flex-1 ${styles.flexStart} flex-col md:p-8 p-4 rounded-xl border-gray-200 bg-gray-100`}>
               <div className='flex flex-col'>
-                <h3 class="font-poppins font-bold text-[24px] md:text-[28px] text-gray-900 w-full">
+                <h3 className="font-poppins font-bold text-[24px] md:text-[28px] text-gray-900 w-full">
                   Talk to us
                 </h3>
-                <p class="text-sm text-gray-600 font-poppins font-normal ">
+                <p className="text-sm text-gray-600 font-poppins font-normal ">
                   We will get back to you immediately
                 </p>
                 <form className='flex flex-col items-start justify-betweeen gap-5 my-4'>
@@ -46,7 +46,7 @@ const Pricing = () => {
               </div>
             </div>
             <div className={`flex-1 flex items-start flex-col justify-between bg-gray-100 md:py-4 md:px-8 p-4 rounded-xl border-gray-200 md:ml-10 ml-0 md:mt-0 mt-10 relative`}>
-                <h3 class="font-poppins font-bold text-[24px] md:text-[28px] text-gray-900 w-full py-4">
+                <h3 className="font-poppins font-bold text-[24px] md:text-[28px] text-gray-900 w-full py-4">
                   Here are our Contacts
                 </h3>
                 <div className='flex flex-col gap-5 md:gap-16 md:flex-row'>

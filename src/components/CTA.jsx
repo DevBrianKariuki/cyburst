@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style'
 import { Button } from 'flowbite-react'
+import {  Link } from 'react-router-dom'
 
 const CTA = () =>  (
   <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col lg:mx-0 bg-primary md:rounded-none box-shadow`}>
@@ -11,9 +12,11 @@ const CTA = () =>  (
     </div>
 
     <div>
-      <Button className="bg-white text-primary uppercase font-poppins font-semibold">Get a free quote</Button>
+      <Link to={'contact'}>
+        <Button className="bg-white text-primary uppercase font-poppins font-semibold">Get a free quote</Button>
+      </Link>
     </div>
   </section>
   )
 
-export default CTA
+export default CTA;

@@ -12,9 +12,10 @@ const Navbar = () => {
   const { pathname } = useLocation()  
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className={` ${styles.paddingX} w-full flex justify-between items-center py-6 navbar border-b border-primary z-[5]`}>
-      <h3 className='text-primary font-poppins font-bold text-2xl lg:text-4xl pl-4 lg:pl-0'>Cyburst</h3>
-
+    <nav className={` ${styles.paddingX} w-full flex fixed top-0 bg-white justify-between items-center py-6 navbar border-b border-primary z-[5]`}>
+      <Link to={'/'}>
+        <h3 className='text-primary font-poppins font-bold text-2xl lg:text-4xl pl-4 lg:pl-0'>Cyburst</h3>
+      </Link>
       <ul className="list-none flex flex-row gap-6 sm:flex hidden justify-end items-center flex-1">
         <NavLink className={`${pathname ===  '/' ? 'font-semibold text-primary' : 'text-black'} mr-4 hover:text-primary font-poppins cursor-pointer text-[16px] hover:text-primary hover:font-semibold`} to={`/`}>
             Home

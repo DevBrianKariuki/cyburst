@@ -14,7 +14,7 @@ const PricingPage = () => {
          </div>
        </div> */}
 
-      <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
+      <div className={`bg-white mt-24 md:mt-18 ${styles.paddingX}, ${styles.flexStart}`}>
          <div className={`${styles.boxWidth}`}>
            
         <section id='clients' className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
@@ -50,7 +50,7 @@ const PricingPage = () => {
             <div className="max-w-[90rem] py-4sm:px-6 lg:px-8 lg:py-3 mx-auto">
               {/* <!-- Grid --> */}
               <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:items-center">
-                <PriceCard className='hover:scale-105' title={'HOME PLAN'} speed={5} price={'1,500'} />
+                <PriceCard  title={'HOME PLAN'} speed={5} price={'1,500'} />
                 <PriceCard title={'SCHOOL PLAN'} speed={10} price={'2,000'} />
                 <PriceCard title={'BUSINESS PLAN'} speed={20} price={'2,500'} />
               </div>

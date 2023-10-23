@@ -3,6 +3,7 @@ import { features } from '../constants'
 import styles, { layout } from '../style'
 import { who_are_we } from '../assets';
 import { Button } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -27,9 +28,9 @@ const WhoAreWe = () => {
           satisfaction and cutting-edge technology, we strive to deliver seamless internet experiences that keep
           you connected, informed, and empowered...
         </p>
-        <a href={`/about`} className="font-poppins cursor-pointer font-semibold uppercase mt-8 rounded-md bg-primary text-white p-4">
+        <Link to={`about#clients`} className="font-poppins cursor-pointer font-semibold uppercase mt-8 rounded-md bg-primary text-white p-4">
           Learn more
-        </a>
+        </Link>
       </div>
       <div className={layout.sectionImg}>
         <img src={who_are_we} alt="Who are we" className='w-[100%] h-[100%] md:w-[80%]' />

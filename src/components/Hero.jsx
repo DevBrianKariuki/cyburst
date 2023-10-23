@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => 
   (
-  <section id="home" className={`flex md:flex-row items-center flex-col padding ${styles.paddingY}`}>
+  <section id="home" className={`flex md:flex-row mt-24 md:mt-14 items-center flex-col padding ${styles.paddingY}`}>
 
     <div className={`flex-1 flex items-center md:items-start flex-col xl:px-0 sm:px-16 px-6`}>
 
@@ -30,7 +30,7 @@ const Hero = () =>
       </Link>
     </div>
     <div id='heroimage' className={`flex-1 flex ${styles.flexCenter} md:my-0 my-14 relative`}>
-      <img src={hero_image} alt='hero-image' className='w-[100%] h-[100%] md:w-[90%] md:h-[90%] relative z-[5]' />
+      <img src={hero_image} alt='hero-image' className='w-[100%] h-[100%] md:w-[90%] md:h-[90%] relative' />
     </div>
   </section>
   )

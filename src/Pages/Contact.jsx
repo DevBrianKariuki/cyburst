@@ -14,7 +14,7 @@ const Pricing = () => {
          </div>
        </div> */}
 
-      <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
+      <div className={`bg-white mt-24 md:mt-24 ${styles.paddingX}, ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
 
           <div className='flex flex-row justify-center items-center w-full px-4 mt-12'>

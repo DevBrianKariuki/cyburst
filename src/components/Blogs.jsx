@@ -2,6 +2,7 @@ import React from 'react'
 import { feedback } from '../constants'
 import styles from '../style'
 import { Card, Button } from 'flowbite-react'
+import { Link } from 'react-router-dom'
 import { router, network_security, parent } from '../assets'
 
 export const BlogCard = ({ category, title, date, photo, message }) => (
@@ -11,15 +12,19 @@ export const BlogCard = ({ category, title, date, photo, message }) => (
 
     <p className='uppercase text-sm text-gray-500 font-poppins font-semibold'>{category}</p>
 
-    <h5 className="text-2xl hover:text-black font-bold tracking-tight text-primary font-poppins dark:text-white">
-      {title}
-    </h5>
+    <Link to={title}>
+      <h5 className="text-2xl hover:text-black font-bold tracking-tight text-primary font-poppins dark:text-white">
+        {title}
+      </h5>
+    </Link>
     <p className=' text-[12px] text-grey-400 font-poppins'>{date}</p>
 
     <p className="font-normal text-gray-600 font-poppins text-[15px] dark:text-gray-400">
       {message}
     </p>
+    <Link to={title}>
     <Button className={'bg-primary hover:bg-primary font-poppins'} >Read More</Button>
+    </Link>
   </Card>
 )
 

@@ -2,6 +2,7 @@ import styles from '../style';
 import { hero_image } from '../assets';
 import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 const Hero = () => 
@@ -29,9 +30,9 @@ const Hero = () =>
         </button>
       </Link>
     </div>
-    <div id='heroimage' className={`flex-1 flex ${styles.flexCenter} md:my-0 my-14 relative`}>
+    <motion.div animate={{ y: [0, 25, 25, 0] }}  transition={{ repeat:Infinity, duration: 3 }} id='heroimage' className={`flex-1 flex ${styles.flexCenter} md:my-0 my-14 relative`}>
       <img src={hero_image} alt='hero-image' className='w-[100%] h-[100%] md:w-[90%] md:h-[90%] relative' />
-    </div>
+    </motion.div>
   </section>
   )
 

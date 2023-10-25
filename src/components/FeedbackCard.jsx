@@ -1,9 +1,12 @@
 import React from 'react'
 import {  quotes } from '../assets'
+import { motion } from 'framer-motion'
 
 const FeedbackCard = ({content, name, title, img}) => (
   <div className='flex justify-between flex-col px-10 py-12 max-w-[370px] md:mr-9 sm:mr-5 mr-0 my-5 '>
-    <img src={quotes} className='w-[42px] h-[30px] object-contain' />
+    <motion.div animate={{ scale: [0.95, 1, 1, 0.95] }}  transition={{ repeat:Infinity, duration: 3 }}>
+      <img src={quotes} className='w-[42px] h-[30px] object-contain' />
+    </motion.div>
     <p className='font-poppins font-normal text-[16px] leading-[32px] text-gray-700 my-10'>{content}</p>
     
     <div className='flex flex-row'>

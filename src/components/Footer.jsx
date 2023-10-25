@@ -13,8 +13,8 @@ const Footer = () =>  (
         </p>
         <div className=" flex flex-row mt-7 gap-5">
           <img src={facebook} alt='facebook' className='w-[24px] h-[24px] rounded-full cursor-pointer' />
-          <img src={instagram} alt='facebook' className='w-[24px] h-[24px] rounded-full cursor-pointer' />
-          <img src={twitter} alt='facebook' className='w-[24px] h-[24px] rounded-full cursor-pointer' />
+          <img src={instagram} alt='instagram' className='w-[24px] h-[24px] rounded-full cursor-pointer' />
+          <img src={twitter} alt='twitter' className='w-[24px] h-[24px] rounded-full cursor-pointer' />
         </div>
       </div>
 

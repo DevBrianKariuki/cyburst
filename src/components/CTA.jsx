@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../style'
 import { Button } from 'flowbite-react'
 import {  Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const CTA = () =>  (
   <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col lg:mx-0 bg-primary md:rounded-none box-shadow`}>
@@ -11,11 +12,11 @@ const CTA = () =>  (
         please don't hesitate to reach out to us</p>
     </div>
 
-    <div>
+    <motion.div animate={{ scale: [0.9, 1, 1, 0.9] }}  transition={{ repeat:Infinity, duration: 3 }}>
       <Link to={'contact'}>
         <Button className="bg-white text-primary uppercase font-poppins font-semibold">Get a free quote</Button>
       </Link>
-    </div>
+    </motion.div>
   </section>
   )
 

@@ -7,22 +7,24 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import { Route, BrowserRouter as Router,  Routes } from "react-router-dom";
 import Layout from './constants/Layout';
+import SingleBlog from './Pages/SingleBlog';
 // 
 
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="pricing" element={<PricingPage />} />
-          <Route path="about" element={<About />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-        {/* <Route path="login" element={< Login/>} /> */}
-      </Routes>
+    	<Routes>
+			<Route path="/" element={<Layout />}>
+			<Route index element={<Home />} />
+			<Route path="pricing" element={<PricingPage />} />
+			<Route path="about" element={<About />} />
+			<Route path="blog" element={<Blog />} />
+			<Route path="contact" element={<Contact />} />
+			<Route path="singleblog" element={<SingleBlog />} />
+			</Route>
+			{/* <Route path="login" element={< Login/>} /> */}
+    	</Routes>
     </Router>
   )
 }

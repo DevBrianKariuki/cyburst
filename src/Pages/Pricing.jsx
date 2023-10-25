@@ -8,11 +8,6 @@ import { PriceCard } from '../components/Pricing';
 const PricingPage = () => {
   return (
     <div className='bg-white w-full overflow-hidden '>
-       {/* <div className={`${styles.paddingX}, ${styles.flexCenter}`}>
-         <div className={`${styles.boxWidth}`}>
-           <Navbar />
-         </div>
-       </div> */}
 
       <div className={`bg-white mt-24 md:mt-18 ${styles.paddingX}, ${styles.flexStart}`}>
          <div className={`${styles.boxWidth}`}>

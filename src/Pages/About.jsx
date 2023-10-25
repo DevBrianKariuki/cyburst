@@ -3,6 +3,7 @@ import '../index.css'
 import styles from '../style'
 import { Hero, Navbar, Stats, Blogs, Testimonials, WhyChooseUs, CTA, Footer, WhoAreWe } from '../components';
 import { introduction, mission, history, team, home, business, enterprise } from '../assets';
+import { motion } from 'framer-motion';
 
 
 const Pricing = () => {
@@ -139,9 +140,9 @@ const Pricing = () => {
 
 export const InfoCard = ({ title, icon, text }) => (
   <div className="flex p-4 flex-col border w-full h-[100%] bg-gray-100 border-gray-200 text-left rounded-xl shadow-sm dark:border-gray-700">
-    <div className='flex items-start justify-end'>
-      <img src={icon} alt="History" className='contain w-[20%] md:px-0' />
-    </div>
+    <motion.div animate={{ scale: [0.97, 1, 1, 0.97] }}  transition={{ repeat:Infinity, duration: 5 }} className='flex items-start justify-end'>
+      <img src={icon} alt={title} className='contain w-[20%] md:px-0' />
+    </motion.div>
     <div className='flex flex-col'>
       <h2 className={`font-poppins font-bold  text-[24px] text-primary w-full`}>{title}</h2>
       <p className={`font-poppins font-normal text-gray-500 mt-4 mb-3 leading-[30px] text-[16px] `}>

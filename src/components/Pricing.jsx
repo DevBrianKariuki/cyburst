@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../style'
+import { motion } from 'framer-motion';
 
 
 export const PriceCard = ({ title, speed, price }) => (

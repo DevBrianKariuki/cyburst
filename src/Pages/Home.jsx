@@ -1,11 +1,15 @@
 import React from 'react'
 import '../index.css'
 import styles from '../style'
+import {  motion } from 'framer-motion'
 import { Hero, Navbar, Stats, Pricing, Blogs, Testimonials, WhyChooseUs, CTA, Footer, WhoAreWe } from '../components';
 
 const Home = () => {
   return (
-    <div className='bg-white w-full overflow-hidden '>
+
+    
+    <div 
+       className='bg-white w-full overflow-hidden '>
 
        <div className={`bg-white ${styles.flexStart}`}>
          <div className={`${styles.boxWidth}`}>
@@ -15,12 +19,17 @@ const Home = () => {
        </div>
 
        <div className={`bg-white ${styles.paddingX}, ${styles.flexStart}`}>
-         <div className={`${styles.boxWidth}`}>
+         <motion.div 
+            animate
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }} 
+            className={`${styles.boxWidth}`}>
            <WhyChooseUs />
            <Pricing />
            <WhoAreWe />
            <Testimonials />
-         </div>
+         </motion.div>
        </div>
 
 

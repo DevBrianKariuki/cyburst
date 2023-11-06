@@ -17,7 +17,9 @@ const FeatureCard = ({ icon, title, content, index }) => (
 )
 
 const WhyChooseUs = () => (
-  <section className={layout.section}>
+  <motion.section initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }} className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={`${styles.heading2} text-center md:text-left px-4 md:px-0`}>Why should you choose<br className='sm:block hidden' /> to opt for our services</h2>
       <div className={`${layout.sectionImg} flex-col`}>
@@ -29,7 +31,7 @@ const WhyChooseUs = () => (
     <div className={layout.sectionImg}>
       <img src={why_choose_us} alt="WHy Chose us" className='w-[100%] contain h-[100%] md:h-[90%] md:w-[90%] px-4 md:px-0' />
     </div>
-  </section>
+  </motion.section>
   )
 
 export default WhyChooseUs;

@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+const { nextui } = require("@nextui-org/react"); 
+
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}", 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,jsx}", "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}" ,'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   mode: "jit",
   theme: {
     extend: {
@@ -23,5 +26,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), nextui()],
 };
